@@ -1,4 +1,4 @@
-package com.api.managepersonaddresses;
+package com.api.managepersonaddresses.services;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.api.managepersonaddresses.models.AddressModel;
 import com.api.managepersonaddresses.repositories.AddressRepository;
-import com.api.managepersonaddresses.services.AddressService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

@@ -36,4 +36,10 @@ public class PersonService {
   public Optional<PersonModel> findById(Integer id) {
     return personRepository.findById(id);
   }
+
+  public void addPerson(PersonModel person) {
+    personRepository.save(person);
+  }
+
+  
 }

@@ -34,7 +34,11 @@ public class PersonModel implements Serializable {
     @OneToMany(mappedBy = "person")
     private List<AddressModel> addresses;
     
-    public PersonModel() {}
+    public PersonModel(String string) {
+    }
+    
+    public PersonModel() {
+    }
     
     public PersonModel(Integer id, String name, String birthDate, List<AddressModel> addresses) {
         this.id = id;

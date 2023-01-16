@@ -24,25 +24,19 @@ public class AddressServiceTest {
 
   @Test
   public void testAddAddress() {
-    // Cria um novo endereço
     AddressModel address = new AddressModel("Rua 1", "123", "Bairro", "Cidade", "Estado", "Pais", "CEP");
 
-    // Adiciona o endereço usando o método addAddress
     addressService.addAddress(address);
 
-    // Verifica se o endereço foi adicionado ao repositório
     assertThat(addressRepository.findAll()).contains(address);
   }
   @Test
     public void testUpdateAddress() {
-        // Cria um novo endereço e adiciona ao repositório
         AddressModel address = new AddressModel("Rua 1", "123", "Bairro", "Cidade", "Estado", "Pais", "CEP");
         address = addressRepository.save(address);
 
-        // Atualiza o endereço
         address.setPublicPlace("Rua 2");
         addressService.updateAddress(address);
-    // Verifica se o endereço foi atualizado no repositório
     assertThat(addressRepository.findById(address.getId()).get().getPublicPlace()).isEqualTo("Rua 2");
 }
 

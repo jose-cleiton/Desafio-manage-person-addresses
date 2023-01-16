@@ -25,27 +25,22 @@ public class PersonServiceTest {
 
   @Test
   public void testSave() {
-    // Cria uma nova pessoa
+    
     PersonModel person = new PersonModel("Nome");
 
-    // Salva a pessoa usando o método save
     personService.save(person);
 
-    // Verifica se a pessoa foi salva no repositório
     assertThat(personRepository.findById(person.getId()).get()).isEqualTo(person);
   }
   @Test
   @Transactional
   public void testUpdatePerson() {
-    // Cria uma nova pessoa e adiciona ao repositório
     PersonModel person = new PersonModel("John Doe");
     personRepository.save(person);
 
-    // Atualiza a pessoa
     person.setName("Jane Doe");
     personService.save(person);
 
-    // Verifica se a pessoa foi atualizada no repositório
     assertThat(personRepository.findById(person.getId()).get().getName()).isEqualTo("Jane Doe");
 
   }

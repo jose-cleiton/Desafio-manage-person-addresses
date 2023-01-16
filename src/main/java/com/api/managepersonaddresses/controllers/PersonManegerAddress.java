@@ -59,10 +59,8 @@ public class PersonManegerAddress {
     }
     personModel.setAddresses(addresses);
 
-    // Salvar o PersonModel primeiro
     personModel = person.save(personModel);
 
-    // Iterar sobre os endereços e salvar cada um deles
     for (AddressModel address : addresses) {
       address.setPerson(personModel);
       addressRepository.save(address);
@@ -98,13 +96,9 @@ public class PersonManegerAddress {
     personModel.setName(personDto.getName());
     personModel.setBirthDate(personDto.getBirthDate());
     
-    
-    
-    
     var res = person.save(personModel);
-
     return ResponseEntity.status(HttpStatus.OK).body(res);
 
-   }
+}
 
 }

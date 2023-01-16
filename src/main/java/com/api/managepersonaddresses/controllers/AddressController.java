@@ -85,9 +85,4 @@ public ResponseEntity<Map<String, Object>> findMainAddressByPersonId(@PathVariab
     return ResponseEntity.ok(response);
 }
 
-
-
-
-
-  
 }

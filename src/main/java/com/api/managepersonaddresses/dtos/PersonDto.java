@@ -2,7 +2,6 @@ package com.api.managepersonaddresses.dtos;
 
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.validation.constraints.NotBlank;
@@ -13,16 +12,12 @@ public class PersonDto implements Serializable {
     private Integer id;
 
     @NotBlank
-    private String name;
-
-   
-    private String birthDate;
-    
+    private String name;   
+    private String birthDate;    
     @NotEmpty
     @NotNull
     private List<AddressDto> addresses;
-
-    public PersonDto(String string, String string2, ArrayList arrayList) {
+    public PersonDto(String string, String string2) {
     }
 
     public Integer getId() {

@@ -21,5 +21,13 @@ public class AddressService {
   public AddressModel save(AddressModel addressModel) {
     return addressRepository.save(addressModel);
     }
-  
+
+
+    public void addAddress(AddressModel address) {
+      addressRepository.save(address);
+  }
+
+  public void updateAddress(AddressModel address) {
+      addressRepository.save(address);
+  }
 }

@@ -30,6 +30,27 @@ public class AddressModel {
     @ManyToOne
     private PersonModel person;
 
+
+  public AddressModel(Integer id, String city, boolean main, String number, String publicPlace, String zipCode, PersonModel person) {
+    this.id = id;
+    this.city = city;
+    this.main = main;
+    this.number = number;
+    this.publicPlace = publicPlace;
+    this.zipCode = zipCode;
+    this.person = person;
+  }
+  
+
+    public AddressModel(String string, String city2, String string2, String number2, String publicPlace2, String zipCode2,
+      String string3) {
+  }
+
+
+    public AddressModel() {
+    }
+
+
     public Integer getId() {
         return id;
     }

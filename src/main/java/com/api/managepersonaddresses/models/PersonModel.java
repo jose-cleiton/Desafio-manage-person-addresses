@@ -2,6 +2,7 @@ package com.api.managepersonaddresses.models;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -37,7 +38,7 @@ public class PersonModel implements Serializable {
     public PersonModel(String string) {
     }
     
-    public PersonModel() {
+    public PersonModel(String string, String string2, ArrayList arrayList) {
     }
     
     public PersonModel(Integer id, String name, String birthDate, List<AddressModel> addresses) {
@@ -47,6 +48,9 @@ public class PersonModel implements Serializable {
         this.addresses = addresses;
     }
     
+    public PersonModel() {
+    }
+
     public Integer getId() {
         return id;
     }

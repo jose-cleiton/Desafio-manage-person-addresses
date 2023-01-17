@@ -108,7 +108,7 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 
 - Editar uma pessoa
 
-[put] http://localhost:8080/person-manager/5
+[put] http://localhost:8080/person-manager/201
 
 ```json
 {

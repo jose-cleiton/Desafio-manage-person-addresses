@@ -64,10 +64,10 @@ adequada para garantir a qualidade do software.
 
 No entanto a qualidade de software é uma preocupação constante durante todo
 o processo de implementação. Isso inclui desde a análise de requisitos até a 
-entrega e manutenção do software. Durante a implementação, eu me ertificaria
+entrega e manutenção do software. Durante a implementação, eu me certificaria
 de seguir práticas de qualidade, como testes automatizados, documentação, 
 padrões de codificação, validação de entrada, performance, segurança e 
-sabilidade para garantir que o software seja confiável, seguro e fácil de 
+usabilidade para garantir que o software seja confiável, seguro e fácil de 
 usar. Eu sempre trabalharia em equipe e comunicaria minhas preocupações e 
 dúvidas com meus colegas de equipe e superiores para garantir a qualidade do 
 software.

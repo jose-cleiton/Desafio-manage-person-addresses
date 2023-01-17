@@ -79,7 +79,8 @@ software.
 Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve permitir:  
 
 - Criar uma pessoa
-[get](http://localhost:8080/person-manager/51)
+
+[get] http://localhost:8080/person-manager/51
 
 ```json
 {
@@ -106,7 +107,7 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 
 - Editar uma pessoa
 
-[put](http://localhost:8080/person-manager/5)
+[put] http://localhost:8080/person-manager/5
 
 ```json
 {
@@ -133,14 +134,14 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 
 - Consultar uma pessoa
 
-[get](http://localhost:8080/person-manager/51)
+[get] http://localhost:8080/person-manager/51
 
 - Listar pessoas
-[get](http://localhost:8080/person-manager)
+[get] http://localhost:8080/person-manager
 
 - Criar endereço para pessoa
 
-[post](http://localhost:8080/address?personId=1)
+[post] http://localhost:8080/address?personId=1
 
 ```json
 {
@@ -153,9 +154,11 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 ```
 
 - Listar endereços da pessoa
-[get](http://localhost:8080/address/51)
+
+[get] http://localhost:8080/address/51
 - Poder informar qual endereço é o principal da pessoa  
-[get](http://localhost:8080/address/main/1)
+
+[get] http://localhost:8080/address/main/1
 
 ## Uma Pessoa deve ter os seguintes campos:  
 

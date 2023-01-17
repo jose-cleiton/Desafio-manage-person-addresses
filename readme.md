@@ -59,7 +59,8 @@ qualidade do software seja alcançada e mantida.
 
 Resposta:
 
-Eu considero a qualidade de software na etapa de implementação, pois é nessa etapa que o software é desenvolvido e, portanto, é a etapa mais 
+Eu considero a qualidade de software na etapa de implementação, pois é nessa
+etapa que o software é desenvolvido e, portanto, é a etapa mais 
 adequada para garantir a qualidade do software.
 
 No entanto a qualidade de software é uma preocupação constante durante todo
@@ -137,6 +138,8 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 [get] http://localhost:8080/person-manager/51
 
 - Listar pessoas
+  
+
 [get] http://localhost:8080/person-manager
 
 - Criar endereço para pessoa
@@ -156,6 +159,7 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 - Listar endereços da pessoa
 
 [get] http://localhost:8080/address/51
+
 - Poder informar qual endereço é o principal da pessoa  
 
 [get] http://localhost:8080/address/main/1

@@ -25,13 +25,83 @@ A entrega deverá ser feita da seguinte forma:
 Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve permitir:  
 
 - Criar uma pessoa
-- Editar uma pessoa
-- Consultar uma pessoa
-- Listar pessoas
-- Criar endereço para pessoa
-- Listar endereços da pessoa
-- Poder informar qual endereço é o principal da pessoa  
+[metodo get](http://localhost:8080/person-manager/51)
+```json
+{
+  "birthDate": "1975-03-20",
+  "name": "José Cleiton C. Santos",
+  "addresses": [
+    {
+        "city": "Camacari",
+        "main": true,
+        "number": "12",
+        "publicPlace": "Vale",
+        "zipCode": "12345"
+      },
+      {
+        "city": "Aracaju",
+        "main": false,
+        "number": "12",
+        "publicPlace": "Cabula",
+        "zipCode": "12345"
+      }
+  ]
+}
+```
 
+- Editar uma pessoa
+
+[put] (http://localhost:8080/person-manager/5)
+```json
+{
+  "birthDate": "1975-03-20",
+  "name": "José Cleiton C. Santos",
+  "addresses": [
+    {
+        "city": "Camacari",
+        "main": true,
+        "number": "12",
+        "publicPlace": "Vale",
+        "zipCode": "12345"
+      },
+      {
+        "city": "Aracaju",
+        "main": false,
+        "number": "12",
+        "publicPlace": "Cabula",
+        "zipCode": "12345"
+      }
+  ]
+}
+```
+- Consultar uma pessoa
+
+[get] (http://localhost:8080/person-manager/51)
+
+
+- Listar pessoas
+[get] (http://localhost:8080/person-manager)
+
+
+- Criar endereço para pessoa
+
+[post] (http://localhost:8080/address?personId=1)
+```json
+{
+  "city": "Camacari",
+  "main": true,
+  "number": "12",
+  "publicPlace": "Vale",
+  "zipCode": "12345"
+}
+```
+
+- Listar endereços da pessoa
+
+[get] (http://localhost:8080/address/51)
+
+- Poder informar qual endereço é o principal da pessoa  
+[get] (http://localhost:8080/address/main/1)
 ## Uma Pessoa deve ter os seguintes campos:  
 
 - Nome

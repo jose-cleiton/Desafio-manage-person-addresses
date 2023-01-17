@@ -2,7 +2,6 @@ package com.api.managepersonaddresses.controllers;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -24,6 +23,7 @@ import static org.mockito.BDDMockito.given;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(PersonManegerAddress.class)
@@ -67,23 +67,47 @@ public class PersonManegerAddressTest {
         .accept(MediaType.APPLICATION_JSON));
 
   }
+  /**
+   * @throws Exception
+   */
   @Test
-public void testGetAllPeople() throws Exception {
+  public void testGetAllPeople() throws Exception {
     // Arrange
     List<PersonModel> people = Arrays.asList(
         new PersonModel("John Doe"),
-        new PersonModel("Jane Smith")
-    );
+        new PersonModel("Jane Smith"));
     given(personService.findAll()).willReturn(people);
 
-     // Act and Assert
+    // Act and Assert
     mvc.perform(MockMvcRequestBuilders.get("/person-manager")
         .contentType(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk());
   }
-
-
   
+  @Test
+  public void testGetPersonById() throws Exception {
+    // Arrange
+    PersonModel person = new PersonModel(1L, "John Doe", "01/01/2000", null);
+    given(personService.findById(any(Long.class))).willReturn(Optional.of(person));
 
+    // Act and Assert
+    mvc.perform(MockMvcRequestBuilders.get("/person-manager/1")
+        .contentType(MediaType.APPLICATION_JSON))
+        .andExpect(MockMvcResultMatchers.status().isOk());
+  }
+
+  @Test
+
+  public void testUpdatePerson() throws Exception {
+    // Arrange
+    PersonModel person = new PersonModel(1L, "John Doe", "01/01/2000", null);
+    given(personService.findById(any(Long.class))).willReturn(Optional.of(person));
+
+    // Act and Assert
+    mvc.perform(MockMvcRequestBuilders.put("/person-manager/1")
+        .contentType(MediaType.APPLICATION_JSON));
+  }
+
+ 
 
 }

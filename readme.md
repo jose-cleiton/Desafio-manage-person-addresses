@@ -25,7 +25,7 @@ A entrega deverá ser feita da seguinte forma:
 Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve permitir:  
 
 - Criar uma pessoa
-[metodo get](http://localhost:8080/person-manager/51)
+[get](http://localhost:8080/person-manager/51)
 ```json
 {
   "birthDate": "1975-03-20",
@@ -97,9 +97,7 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 ```
 
 - Listar endereços da pessoa
-
 [get] (http://localhost:8080/address/51)
-
 - Poder informar qual endereço é o principal da pessoa  
 [get] (http://localhost:8080/address/main/1)
 ## Uma Pessoa deve ter os seguintes campos:  

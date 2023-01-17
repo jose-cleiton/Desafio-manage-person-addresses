@@ -20,6 +20,8 @@ public class PersonDto implements Serializable {
     public PersonDto(String string, String string2) {
     }
 
+    public PersonDto() {
+    }
     public Long getId() {
         return id;
     }

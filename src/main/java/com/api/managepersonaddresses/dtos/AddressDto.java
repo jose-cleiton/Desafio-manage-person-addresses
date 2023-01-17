@@ -3,7 +3,7 @@ package com.api.managepersonaddresses.dtos;
 import jakarta.validation.constraints.NotBlank;
 
 public class AddressDto {
-  private Integer id;
+  private Long id;
 
 
     @NotBlank
@@ -22,14 +22,14 @@ public class AddressDto {
     private String city;
 
 
-    private Integer personId;
+    private Long personId;
 
 
-  public Integer getId() {
+  public Long getId() {
     return this.id;
   }
 
-  public void setId(Integer id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
@@ -77,11 +77,11 @@ public class AddressDto {
     this.city = city;
   }
 
-  public Integer getPersonId() {
+  public Long getPersonId() {
     return this.personId;
   }
 
-  public void setPersonId(Integer personId) {
+  public void setPersonId(Long personId) {
     this.personId = personId;
   }
    

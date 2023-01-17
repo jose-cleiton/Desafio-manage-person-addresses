@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public class PersonDto implements Serializable {
-    private Integer id;
+    private Long id;
 
     @NotBlank
     private String name;   
@@ -20,11 +20,11 @@ public class PersonDto implements Serializable {
     public PersonDto(String string, String string2) {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

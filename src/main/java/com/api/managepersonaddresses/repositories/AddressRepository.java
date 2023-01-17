@@ -8,13 +8,13 @@ import com.api.managepersonaddresses.models.PersonModel;
 
 
 @Component
-public interface AddressRepository extends JpaRepository<AddressModel, Integer> { 
+public interface AddressRepository extends JpaRepository<AddressModel, Long> { 
 
   List<AddressModel> findByPerson(PersonModel person);
 
-  AddressModel findByPersonAndMain(Integer personId, boolean main);
+  AddressModel findByPersonAndMain(Long personId, boolean main);
 
-  Optional<AddressModel> findByPersonIdAndMainTrue(Integer personId);
-  List<AddressModel> findByPersonIdAndMainFalse(Integer personId); 
+  Optional<AddressModel> findByPersonIdAndMainTrue(Long personId);
+  List<AddressModel> findByPersonIdAndMainFalse(Long personId); 
   
 }

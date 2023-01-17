@@ -19,7 +19,7 @@ public class AddressModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AddressModel_SEQ")
     @SequenceGenerator(sequenceName = "AddressModel_SEQ", allocationSize = 1, name = "AddressModel_SEQ")
-    private Integer id;
+    private Long id;
 
     private String city;
     private boolean main;
@@ -31,7 +31,7 @@ public class AddressModel {
     private PersonModel person;
 
 
-  public AddressModel(Integer id, String city, boolean main, String number, String publicPlace, String zipCode, PersonModel person) {
+  public AddressModel(Long id, String city, boolean main, String number, String publicPlace, String zipCode, PersonModel person) {
     this.id = id;
     this.city = city;
     this.main = main;
@@ -51,11 +51,11 @@ public class AddressModel {
     }
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -47,7 +47,7 @@ public class AddressController {
   }
 
   @PostMapping
-  public ResponseEntity<AddressModel> create(@RequestParam("personId") Integer personId,
+  public ResponseEntity<AddressModel> create(@RequestParam("personId") Long personId,
       @RequestBody AddressModel address) {
     Optional<PersonModel> person = personRepository.findById(personId);
     if (!person.isPresent()) {
@@ -59,7 +59,7 @@ public class AddressController {
   }
   
   @GetMapping("{personId}")
-public ResponseEntity<List<AddressModel>> encontrarEnderecosPorPessoa(@PathVariable("personId") Integer personId) {
+public ResponseEntity<List<AddressModel>> encontrarEnderecosPorPessoa(@PathVariable("personId") Long personId) {
     Optional<PersonModel> person = personRepository.findById(personId);
     if(!person.isPresent()) {
         return ResponseEntity.badRequest().build();
@@ -70,7 +70,7 @@ public ResponseEntity<List<AddressModel>> encontrarEnderecosPorPessoa(@PathVaria
 
 
 @GetMapping(value = "/main/{personId}")
-public ResponseEntity<Map<String, Object>> findMainAddressByPersonId(@PathVariable Integer personId) {
+public ResponseEntity<Map<String, Object>> findMainAddressByPersonId(@PathVariable Long personId) {
     Optional<AddressModel> address = repository.findByPersonIdAndMainTrue(personId);
     if(!address.isPresent()) {
         return ResponseEntity.notFound().build();

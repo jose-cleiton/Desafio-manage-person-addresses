@@ -33,7 +33,7 @@ public class PersonService {
     return personRepository.findAll();
   }
 
-  public Optional<PersonModel> findById(Integer id) {
+  public Optional<PersonModel> findById(Long id) {
     return personRepository.findById(id);
   }
 

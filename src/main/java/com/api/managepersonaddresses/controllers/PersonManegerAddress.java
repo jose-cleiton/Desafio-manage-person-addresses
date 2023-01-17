@@ -76,7 +76,7 @@ public class PersonManegerAddress {
   
   
   @GetMapping("/{id}")
-  public ResponseEntity<Object> getPersonById(@PathVariable(value = "id") Integer id) {
+  public ResponseEntity<Object> getPersonById(@PathVariable(value = "id") Long id) {
     Optional<PersonModel> personModelOptional = (Optional<PersonModel>) person.findById(id);
     if (!personModelOptional.isPresent()) {
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Person not found");
@@ -86,7 +86,7 @@ public class PersonManegerAddress {
   
   @PutMapping("{id}")
   public ResponseEntity<Object> updatePerson(
-   @PathVariable(value = "id") Integer id,
+   @PathVariable(value = "id") Long id,
    @RequestBody @Valid PersonDto personDto) {
     Optional<PersonModel> personModelOptional = person.findById(id);
     if (!personModelOptional.isPresent()) {

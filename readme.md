@@ -21,24 +21,36 @@ A entrega deverá ser feita da seguinte forma:
 
 ```
 Resposta:
-Durante a implementação de uma nova funcionalidade de software, eu avaliaria e implementaria os seguintes critérios para garantia de qualidade de software:
+Durante a implementação de uma nova funcionalidade de software, eu avaliaria
+e implementaria os seguintes critérios para garantia de qualidade de software:
 
-Testes automatizados: Escreveria testes automatizados para garantir que a nova funcionalidade esteja funcionando corretamente e para evitar regressões futuras.
+Testes automatizados: Escreveria testes automatizados para garantir que a 
+nova funcionalidade esteja funcionando corretamente e para evitar regressões 
+futuras.
 
-Documentação: Documentaria a nova funcionalidade, incluindo instruções de uso e exemplos, para garantir que os usuários possam entender e usar facilmente a funcionalidade.
+Documentação: Documentaria a nova funcionalidade, incluindo instruções de 
+uso e exemplos, para garantir que os usuários possam entender e usar 
+facilmente a funcionalidade.
 
-Padrões de codificação: Seguiria os padrões de codificação estabelecidos para garantir a legibilidade e manutenibilidade do código.
+Padrões de codificação: Seguiria os padrões de codificação estabelecidos 
+para garantir a legibilidade e manutenibilidade do código.
 
-Validação de entrada: Implementaria validações para garantir que a entrada do usuário esteja dentro dos limites esperados e evitar erros ou vulnerabilidades.
+Validação de entrada: Implementaria validações para garantir que a entrada 
+do usuário esteja dentro dos limites esperados e evitar erros ou 
+vulnerabilidades.
 
-Performance: Mediria e otimizaria o desempenho da nova funcionalidade para garantir que ela seja responsiva e escalável.
+Performance: Mediria e otimizaria o desempenho da nova funcionalidade para 
+garantir que ela seja responsiva e escalável.
 
-Segurança: Verificaria se a nova funcionalidade está protegida contra possíveis ataques, como SQL Injection, XSS, entre outros.
+Segurança: Verificaria se a nova funcionalidade está protegida contra 
+possíveis ataques, como SQL Injection, XSS, entre outros.
 
-Usuabilidade: Avaliaria a usabilidade da nova funcionalidade para garantir que ela seja fácil de usar e entender.
+Usuabilidade: Avaliaria a usabilidade da nova funcionalidade para garantir 
+que ela seja fácil de usar e entender.
 
-Eu sempre procuraria trabalhar em equipe e comunicar minhas preocupações e dúvidas com meus colegas de equipe e meus superiores para garantir que a qualidade do software seja alcançada e mantida.
-
+Eu sempre procuraria trabalhar em equipe e comunicar minhas preocupações e 
+dúvidas com meus colegas de equipe e meus superiores para garantir que a 
+qualidade do software seja alcançada e mantida.
 ```
 
 2. Em qual etapa da implementação você considera a qualidade de software?
@@ -47,9 +59,18 @@ Eu sempre procuraria trabalhar em equipe e comunicar minhas preocupações e dú
 
 Resposta:
 
-Eu considero a qualidade de software na etapa de implementação, pois é nessa etapa que o software é desenvolvido e, portanto, é a etapa mais adequada para garantir a qualidade do software.
+Eu considero a qualidade de software na etapa de implementação, pois é nessa etapa que o software é desenvolvido e, portanto, é a etapa mais 
+adequada para garantir a qualidade do software.
 
-No entanto a qualidade de software é uma preocupação constante durante todo o processo de implementação. Isso inclui desde a análise de requisitos até a entrega e manutenção do software. Durante a implementação, eu me certificaria de seguir práticas de qualidade, como testes automatizados, documentação, padrões de codificação, validação de entrada, performance, segurança e usabilidade para garantir que o software seja confiável, seguro e fácil de usar. Eu sempre trabalharia em equipe e comunicaria minhas preocupações e dúvidas com meus colegas de equipe e superiores para garantir a qualidade do software.
+No entanto a qualidade de software é uma preocupação constante durante todo
+o processo de implementação. Isso inclui desde a análise de requisitos até a 
+entrega e manutenção do software. Durante a implementação, eu me ertificaria
+de seguir práticas de qualidade, como testes automatizados, documentação, 
+padrões de codificação, validação de entrada, performance, segurança e 
+sabilidade para garantir que o software seja confiável, seguro e fácil de 
+usar. Eu sempre trabalharia em equipe e comunicaria minhas preocupações e 
+dúvidas com meus colegas de equipe e superiores para garantir a qualidade do 
+software.
 
 ```
 

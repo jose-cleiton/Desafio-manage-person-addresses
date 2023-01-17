@@ -140,7 +140,7 @@ Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve p
 - Listar pessoas
   
 
-[get] http://localhost:8080/person-manager
+[get] [http://localhost:8080/person-manager]
 
 - Criar endereço para pessoa
 
